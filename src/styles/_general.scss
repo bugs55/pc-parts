@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 70vw;
+  margin: 30px auto;
+  gap: 30px;
+
+  .addForm {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tableWrapper {
+    width: 80%;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      th,
+      td {
+        padding: 5px;
+      }
+
+      td {
+        text-align: center;
+      }
+
+      thead {
+        background-color: rgb(204, 204, 204);
+      }
+    }
+  }
+}
