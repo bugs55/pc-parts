@@ -1,6 +1,7 @@
 # PC Parts Project
 
 This is a project where you can add some PC parts to editable table.
+[Live demo](https://kaleidoscopic-jalebi-b446f8.netlify.app/)
 
 ## Available Scripts
 
