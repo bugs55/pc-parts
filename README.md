@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# PC Parts Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a project where you can add some PC parts to editable table.
 
 ## Available Scripts
 

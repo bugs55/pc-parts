@@ -26,10 +26,10 @@ export default function Form({ formData, handleChange, handleClick }) {
           value={formData.category}
           onChange={handleChange}
         >
-          <option value="unit">Podzespoły komputera</option>
-          <option value="off-line">Urządzenia peryferyjne</option>
-          <option value="software">Oprogramowanie</option>
-          <option value="other">Inne</option>
+          <option value="Podzespoły komputera">Podzespoły komputera</option>
+          <option value="Urządzenia peryferyjne">Urządzenia peryferyjne</option>
+          <option value="Oprogramowanie">Oprogramowanie</option>
+          <option value="Inne">Inne</option>
         </select>
       </div>
       <Input
