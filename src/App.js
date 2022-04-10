@@ -4,19 +4,19 @@ import Form from "./components/Form";
 import Table from "./components/Table";
 
 function App() {
-  //dane, które użytkownik wpisuje do formularza
+  //data from form
   const [formData, setFormData] = useState({
     title: "",
     description: "",
     category: "Podzespoły komputera",
     price: "",
   });
-  //wszystkie wiersze dodawane z formularza
+  //all rows added from form
   const [tableData, setTableData] = useState([]);
-  //licznik do ceny całkowitej
+  //counter of final price
   const [priceSum, setPriceSum] = useState(0);
 
-  //zapisywanie danych z formularza do formData
+  //adding data from form to formData
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => {
@@ -27,7 +27,7 @@ function App() {
     });
   };
 
-  //dodawanie wierszy do tableData i zwiększanie licznika priceSum
+  //adding rows to tableData and increase counter
   const handleClick = () => {
     setTableData((prevTableData) => {
       return [...prevTableData, formData];
@@ -37,9 +37,9 @@ function App() {
     });
   };
 
-  //nazwy kolumn
+  //kolumn names
   const columns = useMemo(() => {
-    //usuwanie wiersza
+    //delete row
     const deleteRow = (row, index) => {
       tableData.splice(index, 1);
       setTableData([...tableData]);
